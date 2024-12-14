@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconum"
+        android:label="GezveGör"
+        android:roundIcon="@drawable/iconum"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity
+            android:name=".view.PostDetails"
+            android:exported="false" />
+        <activity
+            android:name=".view.ToFarPlaces"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBa6ydcVPWa873AP6AGpqATRjnuiCT3C30" />
+
+        <activity
+            android:name=".view.MapsActivityForTravel"
+            android:exported="false"
+            android:label="@string/title_activity_maps_for_travel" />
+        <activity
+            android:name=".view.ErrorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.StartTravelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.GeziActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.InformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.PlaceDetails"
+            android:exported="false" />
+        <activity
+            android:name=".view.MyPlacesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.GeziEklemeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.MainPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.MapsActivity"
+            android:label="@string/title_activity_maps" />
+    </application>
+
+</manifest>
