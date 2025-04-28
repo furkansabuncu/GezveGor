@@ -32,26 +32,11 @@
 
 ## Teknolojiler
 
-- **Flutter** - Uygulama geliştirme için kullanılan framework.
+- **Java Android** - Uygulama geliştirme için kullanılan dil.
 - **Google Maps API** - Harita ve konum servisi için entegrasyon.
 - **Firebase** - Kullanıcı yönetimi, profil saklama ve bildirimler için kullanılabilir.
 - **SQLite** - Kullanıcıların gezdikleri yerleri ve favorilerini depolamak için kullanılabilir.
 
-## Kurulum
-
-Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz.
-
-### 1. Gerekli Araçlar
-
-- Flutter SDK'yi indirip kurun: [Flutter Kurulum](https://flutter.dev/docs/get-started/install)
-- Android Studio veya VS Code gibi bir IDE kullanabilirsiniz.
-
-### 2. Depoyu Klonlayın
-
-Projenin GitHub deposunu bilgisayarınıza klonlayın:
-
-bash
-git clone https://github.com/furkansabuncu/GezveGor
 
 ## Görüntüler
 
